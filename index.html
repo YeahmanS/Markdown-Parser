@@ -10,11 +10,21 @@
 <body>
     <div class="text-area">
         <div class="user-input-area">
-            <textarea id="user-input"> </textarea>
+            <textarea id="user-input" placeholder="Start typing here ..."></textarea>
         </div>
         <div class="file-name-area">
-            <button id="save-button">SAVE</button>
-            <input id="file-name">
+            <button id="save-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 16 16" fill="none">
+                    <path d="M0 1H6L9 4H16V14H0V1Z" fill="#8accf8"/>
+                    </svg>
+
+            </button>
+            <input id="file-name" placeholder="Enter filename.. ">
+            <button id="reset-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#8accf8" width="20px" height="20px" viewBox="0 0 1920 1920">
+                    <path d="M960 0v213.333c411.627 0 746.667 334.934 746.667 746.667S1371.627 1706.667 960 1706.667 213.333 1371.733 213.333 960c0-197.013 78.4-382.507 213.334-520.747v254.08H640V106.667H53.333V320h191.04C88.64 494.08 0 720.96 0 960c0 529.28 430.613 960 960 960s960-430.72 960-960S1489.387 0 960 0" fill-rule="evenodd"/>
+                </svg>
+            </button>
         </div>
     </div>
     <div class="render-area">
@@ -24,16 +34,20 @@
                 <select name="fonts" id="font-select">
                     <option value="Gill Sans, sans-serif">Gill Sans</option>
                     <option value="cursive">Cursive</option>
-                    
-                    
+                    <option value="serif">Serif</option>
+                    <option value="sans-serif">Sans-serif</option>
+                    <option value="monospace">Monospace</option>
+                    <option value="cursive">Cursive</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="system-ui">System UI</option>
+
                 </select>
 
             </div>
             <div class="utility export-utility">
                 <p>Export</p>
                 <select name="export" id="export-file-type">
-                    <option value="dog">HTML</option>
-                    <option value="cat">PDF</option>
+                    <option value="pdf">PDF</option>
                 </select>
             </div>
         </div>
@@ -43,6 +57,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <script src="scripts.js"></script>
     
 </body>
