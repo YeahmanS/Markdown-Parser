@@ -1,8 +1,8 @@
 # Markdown Parser
 
 It's a basic Markdown parser which render your markdown code and turn into pdf 
+**Visit here:** https://markdown-parser-x69x.netlify.app/ 
 
---
 
 ## Technologies Used
 
@@ -13,15 +13,12 @@ It's a basic Markdown parser which render your markdown code and turn into pdf
 - - **markedJS:** Javascript library which converts markdown code to HTML 
 
 
---
-
 ## Features 
 - **Parse your `.md` code**
 - **Reset Button** : Do the heavy lifting of clearing all the input and render field for you
 - **Save Button** : You can save your rendered file in pdf form just from a click of button (p.s. with user defined file name)
 - **Multiple Fonts** : Select your choice of font to render markdown file into
 
---
 
 ## Screenshot 
 ![Website ka Screenshot](Screenshot.png)  
