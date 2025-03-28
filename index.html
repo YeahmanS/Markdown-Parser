@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" href="style.css" >
+
 </head>
 <body>
     <div class="text-area">
@@ -11,13 +13,13 @@
             <textarea id="user-input"> </textarea>
         </div>
         <div class="file-name-area">
-            <button>SAVE</button>
+            <button id="save-button">SAVE</button>
             <input id="file-name">
         </div>
     </div>
     <div class="render-area">
-        <div class="utilies-bar">
-            <div class="utility">
+        <div class="utilities-bar">
+            <div class="utility font-utility">
                 <p>Base Font</p>
                 <select name="fonts" id="font-select">
                     <option value="Gill Sans, sans-serif">Gill Sans</option>
@@ -27,9 +29,9 @@
                 </select>
 
             </div>
-            <div class="utility ">
+            <div class="utility export-utility">
                 <p>Export</p>
-                <select name="pets" id="pet-select">
+                <select name="export" id="export-file-type">
                     <option value="dog">HTML</option>
                     <option value="cat">PDF</option>
                 </select>
