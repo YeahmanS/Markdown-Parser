@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text-area">
+        <div class="user-input-area">
+            <textarea id="user-input"> </textarea>
+        </div>
+        <div class="file-name-area">
+            <button>SAVE</button>
+            <input id="file-name">
+        </div>
+    </div>
+    <div class="render-area">
+        <div class="utilies-bar">
+            <div class="utility">
+                <p>Base Font</p>
+                <select name="fonts" id="font-select">
+                    <option value="Gill Sans, sans-serif">Gill Sans</option>
+                    <option value="cursive">Cursive</option>
+                    
+                    
+                </select>
+
+            </div>
+            <div class="utility ">
+                <p>Export</p>
+                <select name="pets" id="pet-select">
+                    <option value="dog">HTML</option>
+                    <option value="cat">PDF</option>
+                </select>
+            </div>
+        </div>
+        <div id="render-area">
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
